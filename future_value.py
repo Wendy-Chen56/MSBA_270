@@ -2,7 +2,7 @@
 
 
 # set the locale for use in currency formatting
-locale.setlocale(locale.LC_ALL, 'en_US')
+
 
 # display a welcome message
 print("Welcome to the Future Value Calculator")
@@ -37,3 +37,4 @@ while choice.lower() == "y":
     print()
 
 print("Bye!")
+
