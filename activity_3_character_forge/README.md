@@ -124,4 +124,3 @@ On the next run, the program loads the saved character at Level 2, applies damag
 | Week 7 | TODO 5: save character data | Complete |
 | Week 7 | TODO 6: load character data | Complete |
 
-For learning reflections and development notes, see [KEY_TAKEAWAYS.md](KEY_TAKEAWAYS.md).
