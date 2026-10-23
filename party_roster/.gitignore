@@ -1,0 +1,20 @@
+# Local database
+roster.db
+*.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Course homework and guides
+homework/
+student_guide.md
+student_guide.pdf
+
+# Personal lab notes
+lab_journal.md
+test_results.md
