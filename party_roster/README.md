@@ -4,58 +4,79 @@ MSBA 270 - Python Programming
 
 ## About This Project
 
-For this activity, I built a simple program to manage RPG characters using Python and SQLite.
+For this activity, I made a simple RPG character manager using Python and SQLite.
 
-The program lets users add characters, view the roster, and delete characters. Each character has a name, class, HP, and level.
+In Week 8, I created a text menu to add, view, and delete characters. In Week 9, I added a GUI using Tkinter, so users can manage their characters with buttons instead of typing menu options.
 
-The character information is saved in a database, so it is still there when the program is closed and opened again.
+Both programs use the same database, so the characters are saved even after closing the program.
 
 ## Features
 
-- Add a new character with a name, class, HP, and level.
-- View all characters saved in the database.
-- Delete a character by entering its ID.
-- Check for invalid inputs, such as empty names or incorrect numbers.
-- Save character information between runs.
+- Add characters with a name, HP, level, and class.
+- View all saved characters.
+- Delete a character by its ID in the text menu or by selecting it in the GUI.
+- Show error messages when users enter invalid information.
+- Save characters in a SQLite database.
+- Use the same character data in both the text menu and GUI.
 
 ## Project Files
 
-- `code/roster_db_starter.py` - The main program for Week 8.
-- `code/roster_gui_starter.py` - Starter file for the Week 9 activity.
+- `code/roster_db_starter.py` - Week 8 text-menu program.
+- `code/roster_gui_starter.py` - Week 9 GUI program.
 
-The program also creates a `roster.db` file to store character information. This file is kept locally and is not uploaded to GitHub.
+The programs create a local file called `roster.db` to save character information. This file is not uploaded to GitHub.
 
 ## Requirements
 
 - Python 3.10 or newer
-- Python's built-in `sqlite3` module
-- No extra packages needed for Week 8
+- SQLite (`sqlite3`)
+- Tkinter (`tkinter` and `ttk`)
+- No additional packages required
 
 ## How to Run
 
-Open the terminal in the `activity_4_party_roster` folder and enter:
+Open a terminal in the `party_roster` folder.
+
+**Week 8 - Text Menu**
 
 ```bash
 python code/roster_db_starter.py
 ```
 
-The program will show four options:
+The menu has four options: Add character, List roster, Delete character, and Quit.
 
-1. Add character
-2. List roster
-3. Delete character
-4. Quit
+**Week 9 - GUI**
 
-Enter a number to choose what you want to do.
+```bash
+python code/roster_gui_starter.py
+```
+
+A window will open with four input fields, an Add Character button, a character list, and a Delete Selected button.
 
 ## Example
 
 For example, I can add a character with these details:
 
-- Name: Mira
-- Class: Mage
-- HP: 24
-- Level: 3
+- Name: Luna
+- HP: 30
+- Level: 2
+- Class: Archer
 
-When I choose "List roster," the program shows Mira along with her character ID. I can also use that ID to delete her from the roster.
+After clicking Add Character, Luna appears in the table. I can select her and click Delete Selected to remove her.
+
+## Skills Practiced
+
+- Using SQLite to save and manage data
+- Writing SQL commands such as CREATE TABLE, INSERT, SELECT, and DELETE
+- Using functions and loops in Python
+- Checking user input with `if` statements and `try/except`
+- Creating a GUI with Tkinter
+- Connecting buttons to functions
+- Updating the character list after adding or deleting data
+
+## Known Limitations
+
+- The program does not have an option to edit a character after adding it.
+- The GUI does not have a search feature, so users need to look through the list to find a character.
+
 
